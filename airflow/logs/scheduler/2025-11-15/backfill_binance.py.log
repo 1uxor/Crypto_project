@@ -1,0 +1,120 @@
+[2025-11-15T16:31:55.320+0000] {processor.py:186} INFO - Started process (PID=169) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:31:55.326+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:31:55.338+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:55.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:31:55.659+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:31:57.766+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.765+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:backfill_binance
+[2025-11-15T16:31:57.820+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.820+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:backfill_binance
+[2025-11-15T16:31:57.886+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.885+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:backfill_binance
+[2025-11-15T16:31:57.923+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.923+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:backfill_binance
+[2025-11-15T16:31:57.964+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.963+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:backfill_binance
+[2025-11-15T16:31:58.000+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:57.983+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:backfill_binance
+[2025-11-15T16:31:58.026+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:58.025+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:backfill_binance
+[2025-11-15T16:31:58.030+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:58.029+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:31:58.095+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:58.094+0000] {dag.py:3262} INFO - Creating ORM DAG for backfill_binance
+[2025-11-15T16:31:58.108+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:31:58.108+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:31:58.299+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 3.016 seconds
+[2025-11-15T16:32:29.352+0000] {processor.py:186} INFO - Started process (PID=179) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:32:29.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:32:29.369+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:32:29.367+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:32:30.067+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:32:30.378+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:32:30.377+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:32:30.491+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:32:30.490+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:32:30.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 1.375 seconds
+[2025-11-15T16:33:02.441+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:02.535+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:33:03.282+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:03.279+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:03.556+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:09.940+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:09.939+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:33:10.387+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:10.387+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:33:10.707+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 8.533 seconds
+[2025-11-15T16:33:43.303+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:43.328+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:33:43.432+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:43.431+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:43.794+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:33:44.996+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:44.995+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:33:45.801+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:33:45.801+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:33:46.016+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 2.813 seconds
+[2025-11-15T16:34:18.231+0000] {processor.py:186} INFO - Started process (PID=209) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:18.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:34:18.744+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:18.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:21.693+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:22.429+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:22.428+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:34:23.806+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:23.805+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:34:25.225+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 7.200 seconds
+[2025-11-15T16:34:57.303+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:57.382+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:34:57.542+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:57.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:58.064+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:34:59.009+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:59.008+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:34:59.790+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:34:59.789+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:35:03.767+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 6.579 seconds
+[2025-11-15T16:35:34.762+0000] {processor.py:186} INFO - Started process (PID=229) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:35:34.770+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:35:34.781+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:35:34.780+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:35:34.882+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:35:34.961+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:35:34.960+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:35:35.011+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:35:35.010+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:35:35.071+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.339 seconds
+[2025-11-15T16:36:07.724+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:07.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:36:07.865+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:07.856+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:08.502+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:09.972+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:09.970+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:36:10.792+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:10.792+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:36:11.719+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 4.567 seconds
+[2025-11-15T16:36:41.909+0000] {processor.py:186} INFO - Started process (PID=249) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:41.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:36:41.920+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:41.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:41.950+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:36:42.078+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:42.077+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:36:42.158+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:36:42.158+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:36:42.188+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.300 seconds
+[2025-11-15T16:37:12.830+0000] {processor.py:186} INFO - Started process (PID=259) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:12.835+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:37:12.843+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:12.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:12.911+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:13.029+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:13.029+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:37:13.062+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:13.062+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:37:13.130+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.312 seconds
+[2025-11-15T16:37:43.442+0000] {processor.py:186} INFO - Started process (PID=269) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:43.443+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:37:43.446+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:43.445+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:43.496+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:37:43.553+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:43.552+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:37:43.577+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:37:43.577+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:37:43.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.180 seconds
+[2025-11-15T16:38:13.991+0000] {processor.py:186} INFO - Started process (PID=279) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:13.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:38:13.996+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:13.996+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:14.014+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:14.046+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:14.046+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:38:14.073+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:14.072+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:38:14.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.118 seconds
+[2025-11-15T16:38:44.481+0000] {processor.py:186} INFO - Started process (PID=289) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:44.482+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:38:44.485+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:44.484+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:44.504+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:38:44.529+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:44.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:38:44.544+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:38:44.543+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:38:44.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.092 seconds
+[2025-11-15T16:39:14.822+0000] {processor.py:186} INFO - Started process (PID=299) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:14.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:39:14.828+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:14.827+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:14.866+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:14.917+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:14.917+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:39:14.940+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:14.940+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:39:14.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.154 seconds
+[2025-11-15T16:39:45.234+0000] {processor.py:186} INFO - Started process (PID=309) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:45.235+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:39:45.238+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:45.237+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:45.255+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:39:45.285+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:45.285+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:39:45.301+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:39:45.300+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:39:45.322+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.095 seconds
+[2025-11-15T16:40:15.732+0000] {processor.py:186} INFO - Started process (PID=319) to work on /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:40:15.734+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/backfill_binance.py for tasks to queue
+[2025-11-15T16:40:15.736+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:40:15.736+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:40:15.760+0000] {processor.py:925} INFO - DAG(s) 'backfill_binance' retrieved from /opt/airflow/dags/backfill_binance.py
+[2025-11-15T16:40:15.793+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:40:15.793+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-11-15T16:40:15.816+0000] {logging_mixin.py:190} INFO - [2025-11-15T16:40:15.816+0000] {dag.py:4180} INFO - Setting next_dagrun for backfill_binance to None, run_after=None
+[2025-11-15T16:40:15.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/backfill_binance.py took 0.123 seconds

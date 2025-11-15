@@ -1,0 +1,95 @@
+[2025-11-15T16:31:54.790+0000] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-11-15T16:31:54.795+0000] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-11-15T16:31:54.797+0000] {manager.py:485} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-11-15T16:31:54.798+0000] {manager.py:821} INFO - Searching for files in /opt/airflow/dags
+[2025-11-15T16:31:54.897+0000] {manager.py:824} INFO - There are 2 files in /opt/airflow/dags
+[2025-11-15T16:31:55.302+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/opt/airflow/dags/backfill_binance.py    169  0.09s             0           0                                                   0
+/opt/airflow/dags/ohlcv_minute.py        166  0.16s             0           0                                                   0
+================================================================================
+[2025-11-15T16:32:26.078+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  3.32s           2025-11-15T16:31:58                      45
+/opt/airflow/dags/backfill_binance.py                           1           0  3.13s           2025-11-15T16:31:58                      43
+================================================================================
+[2025-11-15T16:32:56.512+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  2.04s           2025-11-15T16:32:30                      12
+/opt/airflow/dags/backfill_binance.py                           1           0  1.53s           2025-11-15T16:32:30                      10
+================================================================================
+[2025-11-15T16:33:26.482+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  9.02s           2025-11-15T16:33:10                      12
+/opt/airflow/dags/backfill_binance.py                           1           0  8.85s           2025-11-15T16:33:10                      10
+================================================================================
+[2025-11-15T16:33:57.194+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  3.50s           2025-11-15T16:33:46                      12
+/opt/airflow/dags/backfill_binance.py                           1           0  3.03s           2025-11-15T16:33:46                      10
+================================================================================
+[2025-11-15T16:34:27.298+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  9.42s           2025-11-15T16:34:26                      12
+/opt/airflow/dags/backfill_binance.py                           1           0  8.02s           2025-11-15T16:34:25                      10
+================================================================================
+[2025-11-15T16:34:58.072+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py        219  1.01s             1           0  9.42s           2025-11-15T16:34:26                      12
+/opt/airflow/dags/backfill_binance.py    216  1.27s             1           0  8.02s           2025-11-15T16:34:25                      10
+================================================================================
+[2025-11-15T16:35:28.800+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/backfill_binance.py                           1           0  7.20s           2025-11-15T16:35:04                      10
+/opt/airflow/dags/ohlcv_minute.py                               1           0  6.27s           2025-11-15T16:35:03                      12
+================================================================================
+[2025-11-15T16:35:59.105+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/ohlcv_minute.py                               1           0  0.91s           2025-11-15T16:35:35                      12
+/opt/airflow/dags/backfill_binance.py                           1           0  0.41s           2025-11-15T16:35:35                      10
+================================================================================
+[2025-11-15T16:36:29.698+0000] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/opt/airflow/dags/backfill_binance.py                           1           0  5.17s           2025-11-15T16:36:11                      10
+/opt/airflow/dags/ohlcv_minute.py                               1           0  5.17s           2025-11-15T16:36:11                      12
+================================================================================

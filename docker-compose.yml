@@ -1,5 +1,5 @@
-version: "3.8"
 services:
+  # ====== YOUR EXISTING DB (KEEP) ======
   timescaledb:
     image: timescale/timescaledb-ha:pg15-latest
     container_name: timescaledb
@@ -11,7 +11,9 @@ services:
       - "5432:5432"
     volumes:
       - tsdata:/var/lib/postgresql/data
+    networks: [net]
 
+  # ====== YOUR EXISTING PGADMIN (KEEP) ======
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
@@ -20,6 +22,110 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=admin
     ports:
       - "8080:80"
+    depends_on: [timescaledb]
+    networks: [net]
+
+  # ====== NEW: Postgres for Airflow metadata ======
+  airflow-db:
+    image: postgres:15
+    container_name: airflow-db
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    ports:
+      - "5433:5432"   # optional; useful if you want to connect via client
+    volumes:
+      - afdb:/var/lib/postgresql/data
+    networks: [net]
+
+  # ====== NEW: One-time init (creates Airflow DB schema + admin user) ======
+  airflow-init:
+    image: apache/airflow:2.10.3
+    container_name: airflow-init
+    entrypoint: ["/bin/bash", "-c"]
+    command:
+      - >
+        chown -R 50000:0 /opt/airflow &&
+        airflow db init &&
+        airflow users create
+        --role Admin
+        --username admin
+        --password admin
+        --firstname Saad
+        --lastname Filali
+        --email saadfilali2002@gmail.com || true
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+    user: "0:0"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./ingestion:/opt/airflow/ingestion
+    depends_on: [airflow-db]
+    networks: [net]
+
+  # ====== NEW: Airflow Web UI (http://localhost:8081) ======
+  airflow-webserver:
+    image: apache/airflow:2.10.3
+    container_name: airflow-webserver
+    command: webserver
+    user: "50000:0"
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      - PYTHONPATH=/opt/airflow
+      # Vars for your DAGs/helpers
+      - PG_HOST=timescaledb
+      - PG_PORT=5432
+      - PG_DB=crypto
+      - PG_USER=postgres
+      - PG_PASS=postgres
+      - EXCHANGE=binance
+      - SYMBOLS=BTC/USDT,ETH/USDT
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./ingestion:/opt/airflow/ingestion
+    depends_on: [airflow-init]
+    networks: [net]
+
+  # ====== NEW: Airflow Scheduler (runs the DAGs) ======
+  airflow-scheduler:
+    image: apache/airflow:2.10.3
+    container_name: airflow-scheduler
+    command: scheduler
+    user: "50000:0"
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@airflow-db:5432/airflow
+      - PYTHONPATH=/opt/airflow
+      # Vars for your DAGs/helpers
+      - PG_HOST=timescaledb
+      - PG_PORT=5432
+      - PG_DB=crypto
+      - PG_USER=postgres
+      - PG_PASS=postgres
+      - EXCHANGE=binance
+      - SYMBOLS=BTC/USDT,ETH/USDT
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./ingestion:/opt/airflow/ingestion
+    depends_on: [airflow-init]
+    networks: [net]
+
+networks:
+  net:
 
 volumes:
   tsdata:
+  afdb:
